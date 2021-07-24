@@ -1,0 +1,62 @@
+@import url(fonts.css);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: IRANSansWeb;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background-image: linear-gradient( to top right , #81ecec , #ffeaa7 90%);
+    display: flex;
+    justify-content: center;
+}
+.form-base{
+/*    background: #112f4b;*/
+    width: 290px ;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;    
+    clear: both;
+    padding: 40px;
+    position: absolute;
+    border-radius: 10px;
+    position: relative;
+    
+}
+.loading {
+    width: 80%;
+    height: 200px;
+    display: inline-block;
+    padding: 0px;
+    border-radius: 100%;
+    border: 20px solid;
+    border-top-color: crimson;
+    border-bottom-color: rgba(0, 0, 0, 0.30);
+    border-left-color: rgba(0, 0, 0, 0.30);
+    border-right-color: rgba(0, 0, 0, 0.30);
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes loading {
+    form {transform: rotate(0deg);}
+    to { transform: rotate(360deg); }
+}
+span{
+    position: fixed;
+    font-size: 30PX;
+}
+@media only screen and (max-width:400px){
+    body{
+        font-size: 150%;
+    }
+    .form-base{
+    background: #112f4b;
+    width: 80%;
+    }
+}

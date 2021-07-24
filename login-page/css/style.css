@@ -1,0 +1,131 @@
+@import url(../../css/style.css);
+
+html,body{
+    height: 100%;
+}
+body{
+    background-image: linear-gradient( to top right , #02aab0 , #00cdac 90%);
+    display: flex;
+    justify-content: center;
+}
+.form-base{
+    background: #112f4b;
+    width: 290px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;    
+    clear: both;
+    padding: 40px;
+    position: absolute;
+    background: #112f4b;
+    border-radius: 10px;
+    border: 3px solid #2ecc71;
+    position: relative;
+}
+.base-loading{
+    display: flex;
+/*    background: red;*/
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10PX;
+    left: 10px
+}
+
+
+form{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+.forget{
+    transition: all ease 0.5s;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+.form-title{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+.username,.password{
+    text-align: center;
+}
+
+
+
+input[type="username"], input[type="password"] {
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 14px 0px;
+	width: 100%;
+	outline: none;
+	color: #fff;
+	border-radius: 24px;
+	transition: 0.75s;
+} 
+
+
+input[type = "username"],input[type = "password"]{
+    width: 100%;
+    border-color: #3498db;
+}
+.submit{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 7px 0px;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.submit:hover{
+    background: #3498db;
+}
+input:hover {
+    border: 2px solid #2ecc71;
+}
+input[type = "submit"]:hover {
+    background: #2ecc71;
+}
+.submit{
+    transition: all ease 0.5s;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+    padding: 5px;
+}
+@media only screen and (max-width:400px){
+    body{
+        font-size: 150%;
+    }
+    .form-base{
+    background: #112f4b;
+    width: 80%;
+    }
+}
+
+@media only screen and ( max-height: 700px ){
+    .footer {
+        display: none;
+    }
+}
